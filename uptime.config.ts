@@ -17,79 +17,79 @@ const workerConfig = {
   // 在此处定义所有监视器
   monitors: [
     {
-      id: '1',
+      id: 'dockerproxy',
       name: 'https://docker.registry.cyou',
       method: 'GET',
       target: 'https://docker.registry.cyou'
     },
     {
-      id: '2',
+      id: 'dockerproxy',
       name: 'https://docker-cf.registry.cyou',
       method: 'GET',
       target: 'https://docker-cf.registry.cyou'
     },
     {
-      id: '3',
+      id: 'dockerproxy',
       name: 'https://dockerpull.com',
       method: 'GET',
       target: 'https://dockerpull.com'
     },
     {
-      id: '4',
+      id: 'dockerproxy',
       name: 'https://dockerproxy.cn',
       method: 'GET',
       target: 'https://dockerproxy.cn'
     },
     {
-      id: '5',
+      id: 'dockerproxy',
       name: 'https://docker.1panel.live',
       method: 'GET',
       target: 'https://docker.1panel.live'
     },
     {
-      id: '6',
+      id: 'dockerproxy',
       name: 'https://hub.rat.dev',
       method: 'GET',
       target: 'https://hub.rat.dev'
     },
     {
-      id: '7',
+      id: 'dockerproxy',
       name: 'https://docker.anyhub.us.kg',
       method: 'GET',
       target: 'https://docker.anyhub.us.kg'
     },
     {
-      id: '8',
+      id: 'dockerproxy',
       name: 'https://docker.chenby.cn',
       method: 'GET',
       target: 'https://docker.chenby.cn'
     },
     {
-      id: '9',
+      id: 'dockerproxy',
       name: 'https://dockerhub.icu',
       method: 'GET',
       target: 'https://dockerhub.icu'
     },
     {
-      id: '10',
+      id: 'dockerproxy',
       name: 'https://docker.awsl9527.cn',
       method: 'GET',
       target: 'https://docker.awsl9527.cn'
     },
     {
-      id: '11',
+      id: 'dockerproxy',
       name: 'https://dhub.kubesre.xyz',
       method: 'GET',
       target: 'https://dhub.kubesre.xyz'
     },
     {
-      id: '12',
+      id: 'dockerproxy',
       name: 'https://docker.hlyun.org',
       method: 'GET',
       target: 'https://docker.hlyun.org'
     },
     {
-      id: '13',
+      id: 'dockerproxy',
       name: 'https://docker.m.daocloud.io',
       method: 'GET',
       target: 'https://docker.m.daocloud.io'
