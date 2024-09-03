@@ -18,15 +18,81 @@ const workerConfig = {
   monitors: [
     {
       id: '1',
-      name: 'docker.registry.cyou',
-      method: 'POST',
+      name: 'https://docker.registry.cyou',
+      method: 'GET',
       target: 'https://docker.registry.cyou'
     },
     {
       id: '2',
-      name: '2',
-      method: 'POST',
+      name: 'https://docker-cf.registry.cyou',
+      method: 'GET',
       target: 'https://docker-cf.registry.cyou'
+    },
+    {
+      id: '3',
+      name: 'https://dockerpull.com',
+      method: 'GET',
+      target: 'https://dockerpull.com'
+    },
+    {
+      id: '4',
+      name: 'https://dockerproxy.cn',
+      method: 'GET',
+      target: 'https://dockerproxy.cn'
+    },
+    {
+      id: '5',
+      name: 'https://docker.1panel.live',
+      method: 'GET',
+      target: 'https://docker.1panel.live'
+    },
+    {
+      id: '6',
+      name: 'https://hub.rat.dev',
+      method: 'GET',
+      target: 'https://hub.rat.dev'
+    },
+    {
+      id: '7',
+      name: 'https://docker.anyhub.us.kg',
+      method: 'GET',
+      target: 'https://docker.anyhub.us.kg'
+    },
+    {
+      id: '8',
+      name: 'https://docker.chenby.cn',
+      method: 'GET',
+      target: 'https://docker.chenby.cn'
+    },
+    {
+      id: '9',
+      name: 'https://dockerhub.icu',
+      method: 'GET',
+      target: 'https://dockerhub.icu'
+    },
+    {
+      id: '10',
+      name: 'https://docker.awsl9527.cn',
+      method: 'GET',
+      target: 'https://docker.awsl9527.cn'
+    },
+    {
+      id: '11',
+      name: 'https://dhub.kubesre.xyz',
+      method: 'GET',
+      target: 'https://dhub.kubesre.xyz'
+    },
+    {
+      id: '12',
+      name: 'https://docker.hlyun.org',
+      method: 'GET',
+      target: 'https://docker.hlyun.org'
+    },
+    {
+      id: '13',
+      name: 'https://docker.m.daocloud.io',
+      method: 'GET',
+      target: 'https://docker.m.daocloud.io'
     },
   ],
   notification: {
