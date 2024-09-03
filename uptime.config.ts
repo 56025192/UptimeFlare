@@ -1,6 +1,6 @@
 const pageConfig = {
   // 状态页面的标题
-  title: "lyc8503's Status Page",
+  title: "古巷DOCKER代理监控",
   // 状态页面标题处显示的链接可以将“highlight”设置为“true”`
   links: [
     { link: 'https://github.com/lyc8503', label: 'GitHub' },
@@ -19,28 +19,28 @@ const workerConfig = {
     {
       id: '1',
       name: 'docker.registry.cyou',
-      method: 'GET',
+      method: 'POST',
       target: 'https://docker.registry.cyou'
     },
     {
-      id: 'ssh_monitor',
+      id: '2',
       name: '2',
-      method: 'GET',
+      method: 'POST',
       target: 'https://docker-cf.registry.cyou'
     },
   ],
   notification: {
-    // [Optional] apprise API server URL
-    // if not specified, no notification will be sent
+    // [可选]通知API服务器URL
+    // 如果未指定，则不会发送通知
     appriseApiServer: "https://apprise.example.com/notify",
-    // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
-    // if not specified, no notification will be sent
+    // [可选]用于通知的收件人URL，请参阅https://github.com/caronc/apprise
+    // 如果未指定，则不会发送通知
     recipientUrl: "tgram://bottoken/ChatID",
-    // [Optional] timezone used in notification messages, default to "Etc/GMT"
+    // [可选]通知消息中使用的时区，默认为“Etc/GMT”
     timeZone: "Asia/Shanghai",
-    // [Optional] grace period in minutes before sending a notification
-    // notification will be sent only if the monitor is down for N continuous checks after the initial failure
-    // if not specified, notification will be sent immediately
+    // [可选]发送通知前的宽限期（分钟）
+    // 只有当监视器在初始故障后停机进行N次连续检查时，才会发送通知
+    // 如果未指定，将立即发送通知
     gracePeriod: 5,
   },
   callbacks: {
@@ -52,11 +52,11 @@ const workerConfig = {
       timeNow: number,
       reason: string
     ) => {
-      // This callback will be called when there's a status change for any monitor
-      // Write any Typescript code here
+      // 当任何监视器的状态发生变化时，将调用此回调
+      // 在此处编写任何Typescript代码
 
-      // This will not follow the grace period settings and will be called immediately when the status changes
-      // You need to handle the grace period manually if you want to implement it
+      // 这将不遵循宽限期设置，并在状态更改时立即调用
+      // 如果你想实现它，你需要手动处理宽限期
     },
     onIncident: async (
       env: any,
@@ -65,8 +65,8 @@ const workerConfig = {
       timeNow: number,
       reason: string
     ) => {
-      // This callback will be called EVERY 1 MINTUE if there's an on-going incident for any monitor
-      // Write any Typescript code here
+      // 如果任何监视器发生持续事件，此回调将每1分钟调用一次
+      // 在此处编写任何Typescript代码
     },
   },
 }
