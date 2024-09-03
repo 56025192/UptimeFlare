@@ -1,6 +1,6 @@
 const pageConfig = {
   // 状态页面的标题
-  title: "古巷DOCKER代理监控",
+  title: "古巷代理监控",
   // 状态页面标题处显示的链接可以将“highlight”设置为“true”`
   links: [
     { link: 'https://github.com/lyc8503', label: 'GitHub' },
@@ -17,79 +17,79 @@ const workerConfig = {
   // 在此处定义所有监视器
   monitors: [
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://docker.registry.cyou',
       method: 'GET',
       target: 'https://docker.registry.cyou'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://docker-cf.registry.cyou',
       method: 'GET',
       target: 'https://docker-cf.registry.cyou'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://dockerpull.com',
       method: 'GET',
       target: 'https://dockerpull.com'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://dockerproxy.cn',
       method: 'GET',
       target: 'https://dockerproxy.cn'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://docker.1panel.live',
       method: 'GET',
       target: 'https://docker.1panel.live'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://hub.rat.dev',
       method: 'GET',
       target: 'https://hub.rat.dev'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://docker.anyhub.us.kg',
       method: 'GET',
       target: 'https://docker.anyhub.us.kg'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://docker.chenby.cn',
       method: 'GET',
       target: 'https://docker.chenby.cn'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://dockerhub.icu',
       method: 'GET',
       target: 'https://dockerhub.icu'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://docker.awsl9527.cn',
       method: 'GET',
       target: 'https://docker.awsl9527.cn'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://dhub.kubesre.xyz',
       method: 'GET',
       target: 'https://dhub.kubesre.xyz'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://docker.hlyun.org',
       method: 'GET',
       target: 'https://docker.hlyun.org'
     },
     {
-      id: 'dockerproxy',
+      id: 'docker',
       name: 'https://docker.m.daocloud.io',
       method: 'GET',
       target: 'https://docker.m.daocloud.io'
