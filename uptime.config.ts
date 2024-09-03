@@ -1,6 +1,6 @@
 const pageConfig = {
   // 状态页面的标题
-  title: "古巷代理监控",
+  title: "古巷Docker代理监控",
   // 状态页面标题处显示的链接可以将“highlight”设置为“true”`
   links: [
     { link: 'https://github.com/lyc8503', label: 'GitHub' },
@@ -17,79 +17,79 @@ const workerConfig = {
   // 在此处定义所有监视器
   monitors: [
     {
-      id: 'docker',
+      id: '1',
       name: 'https://docker.registry.cyou',
       method: 'GET',
       target: 'https://docker.registry.cyou'
     },
     {
-      id: 'docker',
+      id: '2',
       name: 'https://docker-cf.registry.cyou',
       method: 'GET',
       target: 'https://docker-cf.registry.cyou'
     },
     {
-      id: 'docker',
+      id: '3',
       name: 'https://dockerpull.com',
       method: 'GET',
       target: 'https://dockerpull.com'
     },
     {
-      id: 'docker',
+      id: '4',
       name: 'https://dockerproxy.cn',
       method: 'GET',
       target: 'https://dockerproxy.cn'
     },
     {
-      id: 'docker',
+      id: '5',
       name: 'https://docker.1panel.live',
       method: 'GET',
       target: 'https://docker.1panel.live'
     },
     {
-      id: 'docker',
+      id: '6',
       name: 'https://hub.rat.dev',
       method: 'GET',
       target: 'https://hub.rat.dev'
     },
     {
-      id: 'docker',
+      id: '7',
       name: 'https://docker.anyhub.us.kg',
       method: 'GET',
       target: 'https://docker.anyhub.us.kg'
     },
     {
-      id: 'docker',
+      id: '8',
       name: 'https://docker.chenby.cn',
       method: 'GET',
       target: 'https://docker.chenby.cn'
     },
     {
-      id: 'docker',
+      id: '9',
       name: 'https://dockerhub.icu',
       method: 'GET',
       target: 'https://dockerhub.icu'
     },
     {
-      id: 'docker',
+      id: '10',
       name: 'https://docker.awsl9527.cn',
       method: 'GET',
       target: 'https://docker.awsl9527.cn'
     },
     {
-      id: 'docker',
+      id: '11',
       name: 'https://dhub.kubesre.xyz',
       method: 'GET',
       target: 'https://dhub.kubesre.xyz'
     },
     {
-      id: 'docker',
+      id: '12',
       name: 'https://docker.hlyun.org',
       method: 'GET',
       target: 'https://docker.hlyun.org'
     },
     {
-      id: 'docker',
+      id: '13',
       name: 'https://docker.m.daocloud.io',
       method: 'GET',
       target: 'https://docker.m.daocloud.io'
